@@ -6,7 +6,7 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service lint",
-    "jest": "jest --testEnvironment=node --verbose --watchAll --runInBand"
+    "jest": "jest --testEnvironment=node --verbose --watchAll --runInBand --forceExit"
   },
   "dependencies": {
     "core-js": "^3.6.5",
