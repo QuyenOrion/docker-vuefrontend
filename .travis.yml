@@ -1,7 +1,10 @@
+language: generic 
 sudo: required
 services:
   - docker
+
 before_install:
   - docker build -t quyenorion/docker-vuefrontend -f Dockerfile.dev .
+
 script:
-  - docker run quyenorion/docker-vuefrontend npm run jest -- --forceExit
+  - docker run -e CI=true quyenorion/docker-vuefrontend npm run jest
